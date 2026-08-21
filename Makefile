@@ -1,4 +1,4 @@
-PREFIX=/opt/xnuports
+PREFIX?=/usr/local
 
 all:
 	swift build --disable-sandbox -c release --arch arm64
