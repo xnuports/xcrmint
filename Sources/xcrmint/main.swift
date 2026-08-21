@@ -8,7 +8,7 @@ private func fail(_ message: String) -> Never {
   exit(EXIT_FAILURE)
 }
 
-struct FixMacosInternalSDK: ParsableCommand {
+struct Xcrmint: ParsableCommand {
   @Argument(
     help: "The xcodeproj file(s) to update.",
     transform: Path.init(_:))
@@ -44,4 +44,4 @@ struct FixMacosInternalSDK: ParsableCommand {
   }
 }
 
-FixMacosInternalSDK.main()
+Xcrmint.main()

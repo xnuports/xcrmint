@@ -2,9 +2,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "fix-macosx-internal-sdk",
+    name: "xcrmint",
     platforms: [
-        .macOS("13.0"),
+        .macOS("26.0"),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "1.8.2")),
@@ -12,7 +12,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "fix-macosx-internal-sdk",
+            name: "xcrmint",
             dependencies: [
                 "XcodeProj",
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),

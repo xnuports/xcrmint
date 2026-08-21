@@ -1,18 +1,21 @@
-# fix-macos-internal-sdk
+# xcrmint
 
-A silly CLI for replacing `macosx.internal` SDK settings in `.xcodeproj`
-files with `macosx`. This is useful when building projects from opensource.apple.com
+A command-line utility for replacing `macosx.internal` SDK settings in `.xcodeproj` files
+with `macosx`. This is useful when building projects from opensource.apple.com that try
+to link Apple's internal SDK.
 
 ## Usage
 
 ```sh
-fix-macosx-internal-sdk path/to/ld64.xcodeproj
+xcrmint path/to/<project>.xcodeproj
 ```
 
 ## Installation
 
+With the xnuports [pkg](git@github.com:xnuports/pkg-bootstrap.git) package manager:
+
 ```sh
-brew install keith/formulae/fix-macosx-internal-sdk
+pkg install xcrmint
 ```
 
 ## Notes
